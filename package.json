@@ -1,36 +1,29 @@
 {
+  "name": "automeyt",
   "private": true,
-  "name": "cara",
-  "description": "Playful and Colorful One-Page portfolio featuring Parallax effects and animations",
-  "version": "0.2.16",
-  "author": "LekoArts",
-  "license": "0BSD",
-  "starter-name": "gatsby-starter-portfolio-cara",
-  "scripts": {
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "develop:cypress": "cross-env CYPRESS_SUPPORT=y yarn develop",
-    "build:cypress": "cross-env CYPRESS_SUPPORT=y yarn build",
-    "start": "gatsby develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
-  },
+  "description": "We build AI agents and set up automations for your business' success",
+  "version": "0.1.0",
+  "author": "@mayknxyz",
   "dependencies": {
-    "@lekoarts/gatsby-theme-cara": "^5.1.7",
-    "gatsby": "^3.3.1",
-    "gatsby-plugin-manifest": "^5.14.0",
-    "gatsby-plugin-webpack-statoscope": "^1.0.3",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "ajv": "^8.12.0",
+    "gatsby": "^5.13.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "theme-ui": "^0.15.7"
   },
   "devDependencies": {
     "@types/node": "^20.17.16",
-    "@types/react": "^18.3.18",
-    "@types/react-dom": "^18.3.5",
-    "ajv": "^8.17.1",
-    "cross-env": "^7.0.3",
-    "gh-pages": "^6.3.0",
-    "typescript": "^5.7.3"
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "typescript": "^5.3.3",
+    "gatsby-plugin-typescript": "^5.13.0"
+  },
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit"
   }
 }
